@@ -1,0 +1,35 @@
+1) PATCH https://kjvgnmyocdlwswnvfyrs.supabase.co/rest/v1/grades?id=eq.6
+тело
+
+{
+    "grade":"5"
+}
+
+2) POST https://kjvgnmyocdlwswnvfyrs.supabase.co/rest/v1/works
+тело
+{
+    "name": "кр3",
+    "desc": "5+5",
+    "subject": "математика",
+    "body": "10",
+    "student": "2"
+}
+
+
+3) https://kjvgnmyocdlwswnvfyrs.supabase.co/rest/v1/users
+тело
+{
+    {
+    "fullname": "Курзенкова",
+    "group": "ИС 25"
+}
+}
+
+4)https://kjvgnmyocdlwswnvfyrs.supabase.co/rest/v1/grades?grade=gt.3&select=*
+
+5)https://kjvgnmyocdlwswnvfyrs.supabase.co/rest/v1/teacher_work_count2?work_count=gt.2&select=*
+тело
+CREATE VIEW teacher_work_count2 as
+SELECT teacher_id, COUNT(work_id) AS work_count
+FROM grades
+GroUP bY teacher_id;
