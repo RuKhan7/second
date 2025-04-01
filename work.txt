@@ -14,3 +14,13 @@
     "body": "10",
     "student": "2"
 }
+
+
+3) https://kjvgnmyocdlwswnvfyrs.supabase.co/rest/v1/users
+тело
+{
+    {
+    "fullname": "Курзенкова",
+    "group": "ИС 25"
+}
+}
