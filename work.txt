@@ -24,3 +24,5 @@
     "group": "ИС 25"
 }
 }
+
+4)https://kjvgnmyocdlwswnvfyrs.supabase.co/rest/v1/grades?grade=gt.3&select=*
